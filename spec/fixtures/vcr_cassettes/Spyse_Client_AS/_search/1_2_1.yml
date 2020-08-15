@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.spyse.com/v3/data/as/search
+    body:
+      encoding: UTF-8
+      string: '{"search_params":[{"as_ip":{"operator":"eq","value":"8.8.8.8"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spyse.com
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <CENSORED>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Aug 2020 01:38:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d394cf31e4cd2a39e48536e44f4e94ecd1597455511; expires=Mon, 14-Sep-20
+        01:38:31 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - https://spyse.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04915dc9170000d63554a36200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5c2f3254fa48d635-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"items":[{"asn":15169,"as_org":"GOOGLE","ipv4_cidr":[{"cidr":"8.8.4.0/24","isp":"Level
+        3 Communications","domains_count":0},{"cidr":"8.8.8.0/24","isp":"Level 3 Communications","domains_count":0},{"cidr":"8.34.208.0/20","isp":"Google
+        Cloud","domains_count":0},{"cidr":"8.35.192.0/20","isp":"Google Cloud","domains_count":0},{"cidr":"23.236.48.0/20","isp":"Google
+        Cloud","domains_count":0},{"cidr":"23.251.128.0/19","isp":"Google Cloud","domains_count":0},{"cidr":"34.65.0.0/16","isp":"Google
+        Cloud","domains_count":0},{"cidr":"34.66.0.0/15","isp":"Google Cloud","domains_count":0},{"cidr":"34.68.0.0/14","isp":"Google
+        Cloud","domains_count":0},{"cidr":"34.72.0.0/13","isp":"Google Cloud","domains_count":0},{"cidr":"34.80.0.0/12","isp":"Google
+        Cloud","domains_count":0},{"cidr":"34.96.0.0/14","isp":"Google Cloud","domains_count":0},{"cidr":"34.100.0.0/16","isp":"Google
+        Cloud","domains_count":0},{"cidr":"34.102.0.0/15","isp":"Google Cloud","domains_count":0},{"cidr":"34.104.0.0/13","isp":"Google
+        Cloud","domains_count":0},{"cidr":"34.116.16.0/20","isp":"Google","domains_count":0},{"cidr":"34.116.32.0/19","isp":"Google","domains_count":0},{"cidr":"34.116.64.0/18","isp":"Google","domains_count":0},{"cidr":"34.116.128.0/17","isp":"Google","domains_count":0},{"cidr":"34.117.0.0/16","isp":"Google","domains_count":0},{"cidr":"34.118.0.0/15","isp":"Google","domains_count":0},{"cidr":"34.120.0.0/13","isp":"Google","domains_count":0},{"cidr":"35.184.0.0/13","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.192.0.0/14","isp":"Google Cloud","domains_count":0},{"cidr":"35.196.0.0/15","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.198.0.0/16","isp":"Google Cloud","domains_count":0},{"cidr":"35.199.0.0/17","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.199.128.0/18","isp":"Google Cloud","domains_count":0},{"cidr":"35.200.0.0/14","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.204.0.0/15","isp":"Google Cloud","domains_count":0},{"cidr":"35.206.0.0/23","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.206.4.0/24","isp":"Google Cloud","domains_count":0},{"cidr":"35.206.64.0/18","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.206.128.0/17","isp":"Google Cloud","domains_count":0},{"cidr":"35.207.0.0/17","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.207.128.0/18","isp":"Google Cloud","domains_count":0},{"cidr":"35.208.0.0/14","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.212.0.0/17","isp":"Google Cloud","domains_count":0},{"cidr":"35.213.0.0/16","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.214.0.0/16","isp":"Google Cloud","domains_count":0},{"cidr":"35.215.64.0/18","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.215.128.0/18","isp":"Google Cloud","domains_count":0},{"cidr":"35.216.0.0/15","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.219.0.0/17","isp":"Google Cloud","domains_count":0},{"cidr":"35.219.128.0/18","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.220.0.0/14","isp":"Google Cloud","domains_count":0},{"cidr":"35.224.0.0/12","isp":"Google
+        Cloud","domains_count":0},{"cidr":"35.240.0.0/13","isp":"Google Cloud","domains_count":0},{"cidr":"64.233.160.0/19","isp":"Google","domains_count":0},{"cidr":"66.102.0.0/20","isp":"Google","domains_count":0},{"cidr":"66.249.64.0/19","isp":"Googlebot","domains_count":0},{"cidr":"70.32.128.0/19","isp":"Google","domains_count":0},{"cidr":"72.14.192.0/18","isp":"Google","domains_count":0},{"cidr":"74.114.24.0/21","isp":"Google
+        Cloud","domains_count":0},{"cidr":"74.125.0.0/16","isp":"Google","domains_count":0},{"cidr":"104.134.88.0/24","isp":"Google
+        Corporate Office","domains_count":0},{"cidr":"104.134.92.0/23","isp":"Google
+        Corporate Office","domains_count":0},{"cidr":"104.154.0.0/15","isp":"Google
+        Cloud","domains_count":0},{"cidr":"104.196.0.0/14","isp":"Google Cloud","domains_count":0},{"cidr":"107.167.160.0/19","isp":"Google
+        Cloud","domains_count":0},{"cidr":"107.178.192.0/18","isp":"Google Cloud","domains_count":0},{"cidr":"108.59.80.0/20","isp":"Google
+        Cloud","domains_count":0},{"cidr":"108.170.192.0/18","isp":"Google Cloud","domains_count":0},{"cidr":"108.177.0.0/17","isp":"Google","domains_count":0},{"cidr":"130.211.0.0/16","isp":"Google","domains_count":0},{"cidr":"136.112.0.0/12","isp":"Google","domains_count":0},{"cidr":"142.250.0.0/15","isp":"Google","domains_count":0},{"cidr":"146.148.0.0/17","isp":"Google","domains_count":0},{"cidr":"162.216.148.0/22","isp":"Google
+        Cloud","domains_count":0},{"cidr":"162.222.176.0/21","isp":"Google Cloud","domains_count":0},{"cidr":"172.110.32.0/21","isp":"Google","domains_count":0},{"cidr":"172.217.0.0/16","isp":"Google","domains_count":0},{"cidr":"172.253.0.0/16","isp":"Google","domains_count":0},{"cidr":"173.194.0.0/16","isp":"Google","domains_count":0},{"cidr":"173.255.112.0/20","isp":"Google
+        Cloud","domains_count":0},{"cidr":"192.158.28.0/22","isp":"Google Cloud","domains_count":0},{"cidr":"192.178.0.0/15","isp":"Google","domains_count":0},{"cidr":"199.36.154.0/23","isp":"Google","domains_count":0},{"cidr":"199.36.156.0/24","isp":"Google","domains_count":0},{"cidr":"199.192.112.0/22","isp":"Google
+        Cloud","domains_count":0},{"cidr":"199.223.232.0/22","isp":"Google Cloud","domains_count":0},{"cidr":"199.223.236.0/23","isp":"Google
+        Cloud","domains_count":0},{"cidr":"199.223.239.0/24","isp":"Google","domains_count":0},{"cidr":"207.223.160.0/20","isp":"Google","domains_count":0},{"cidr":"208.68.108.0/22","isp":"Google
+        Cloud","domains_count":0},{"cidr":"208.81.188.0/22","isp":"Google Cloud","domains_count":0},{"cidr":"209.85.128.0/17","isp":"Google","domains_count":0},{"cidr":"216.58.192.0/19","isp":"Google","domains_count":0},{"cidr":"216.73.80.0/20","isp":"Google","domains_count":0},{"cidr":"216.239.32.0/20","isp":"Google","domains_count":0},{"cidr":"216.239.48.0/21","isp":"Google","domains_count":0},{"cidr":"216.239.56.0/22","isp":"Google","domains_count":0},{"cidr":"216.239.61.0/24","isp":"Google","domains_count":0},{"cidr":"216.239.62.0/23","isp":"Google","domains_count":0}],"ipv6_cidr":[{"cidr":"2001:4860::/34"},{"cidr":"2001:4860:4000::/37"},{"cidr":"2001:4860:4800::/46"},{"cidr":"2001:4860:4804::/48"},{"cidr":"2001:4860:4806::/47"},{"cidr":"2001:4860:4808::/45"},{"cidr":"2001:4860:4810::/44"},{"cidr":"2001:4860:4820::/43"},{"cidr":"2001:4860:4840::/42"},{"cidr":"2001:4860:4880::/41"},{"cidr":"2001:4860:4900::/40"},{"cidr":"2001:4860:4a00::/39"},{"cidr":"2001:4860:4c00::/38"},{"cidr":"2001:4860:5000::/36"},{"cidr":"2001:4860:6000::/35"},{"cidr":"2001:4860:8000::/33"},{"cidr":"2404:6800::/32"},{"cidr":"2404:f340:8000::/33"},{"cidr":"2600:1900::/28"},{"cidr":"2607:f8b0::/32"},{"cidr":"2620:120:e000::/40"},{"cidr":"2800:3f0::/32"},{"cidr":"2a00:1450::/32"},{"cidr":"2a00:79e1:805::/48"},{"cidr":"2c0f:fb50::/32"}],"ipv4_cidr_array":["8.8.4.0/24","8.8.8.0/24","8.34.208.0/20","8.35.192.0/20","23.236.48.0/20","23.251.128.0/19","34.65.0.0/16","34.66.0.0/15","34.68.0.0/14","34.72.0.0/13","34.80.0.0/12","34.96.0.0/14","34.100.0.0/16","34.102.0.0/15","34.104.0.0/13","34.116.16.0/20","34.116.32.0/19","34.116.64.0/18","34.116.128.0/17","34.117.0.0/16","34.118.0.0/15","34.120.0.0/13","35.184.0.0/13","35.192.0.0/14","35.196.0.0/15","35.198.0.0/16","35.199.0.0/17","35.199.128.0/18","35.200.0.0/14","35.204.0.0/15","35.206.0.0/23","35.206.4.0/24","35.206.64.0/18","35.206.128.0/17","35.207.0.0/17","35.207.128.0/18","35.208.0.0/14","35.212.0.0/17","35.213.0.0/16","35.214.0.0/16","35.215.64.0/18","35.215.128.0/18","35.216.0.0/15","35.219.0.0/17","35.219.128.0/18","35.220.0.0/14","35.224.0.0/12","35.240.0.0/13","64.233.160.0/19","66.102.0.0/20","66.249.64.0/19","70.32.128.0/19","72.14.192.0/18","74.114.24.0/21","74.125.0.0/16","104.134.88.0/24","104.134.92.0/23","104.154.0.0/15","104.196.0.0/14","107.167.160.0/19","107.178.192.0/18","108.59.80.0/20","108.170.192.0/18","108.177.0.0/17","130.211.0.0/16","136.112.0.0/12","142.250.0.0/15","146.148.0.0/17","162.216.148.0/22","162.222.176.0/21","172.110.32.0/21","172.217.0.0/16","172.253.0.0/16","173.194.0.0/16","173.255.112.0/20","192.158.28.0/22","192.178.0.0/15","199.36.154.0/23","199.36.156.0/24","199.192.112.0/22","199.223.232.0/22","199.223.236.0/23","199.223.239.0/24","207.223.160.0/20","208.68.108.0/22","208.81.188.0/22","209.85.128.0/17","216.58.192.0/19","216.73.80.0/20","216.239.32.0/20","216.239.48.0/21","216.239.56.0/22","216.239.61.0/24","216.239.62.0/23"],"ipv6_cidr_array":["2001:4860::/34","2001:4860:4000::/37","2001:4860:4800::/46","2001:4860:4804::/48","2001:4860:4806::/47","2001:4860:4808::/45","2001:4860:4810::/44","2001:4860:4820::/43","2001:4860:4840::/42","2001:4860:4880::/41","2001:4860:4900::/40","2001:4860:4a00::/39","2001:4860:4c00::/38","2001:4860:5000::/36","2001:4860:6000::/35","2001:4860:8000::/33","2404:6800::/32","2404:f340:8000::/33","2600:1900::/28","2607:f8b0::/32","2620:120:e000::/40","2800:3f0::/32","2a00:1450::/32","2a00:79e1:805::/48","2c0f:fb50::/32"]}],"total_count":1,"max_view_count":10000,"offset":0,"limit":1}}
+
+        '
+    http_version:
+  recorded_at: Sat, 15 Aug 2020 01:38:31 GMT
+recorded_with: VCR 5.1.0

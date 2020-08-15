@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spyse.com/v3/data/domain?name=example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spyse.com
+      Authorization:
+      - Bearer <CENSORED>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Aug 2020 02:07:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2fecad3c6389f9682a421b3b491c6cf71597457225; expires=Mon, 14-Sep-20
+        02:07:05 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - https://spyse.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '049177edbc0000d64900b11200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5c2f5c292bc3d649-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"items":[{"alexa_info":{"rank":10567},"alexa_rank_updated_at":null,"cert_summary":{"fingerprint_sha256":"9250711c54de546f4370e0c3d3a3ec45bc96092a25a4a71a1afa396af7047eb8","issuer_dn":{"C":"US","CN":"DigiCert
+        SHA2 Secure Server CA","L":"","O":"DigiCert Inc","OU":"","ST":"","emailAddress":"","raw":"C=US,
+        O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA"},"subject_dn":{"C":"US","CN":"www.example.org","L":"Los
+        Angeles","O":"Internet Corporation for Assigned Names and Numbers","OU":"Technology","ST":"California","businessCategory":"","emailAddress":"","jurisdictionCountry":"","jurisdictionStateOrProvince":"","postalCode":"","raw":"C=US,
+        ST=California, L=Los Angeles, O=Internet Corporation for Assigned Names and
+        Numbers, OU=Technology, CN=www.example.org","serialNumber":"","street":""},"tls_version":"TLSv1.2","validity_end":"2020-12-02T12:00:00Z"},"cert_summary_updated_at":null,"dns_records":{"A":[{"ip":"93.184.216.34","as_num":15133,"as_org":"EDGECAST","isp":"Verizon
+        Business","org":"Verizon Business","city_name":"Norwell","country":"United
+        States","country_iso_code":"US","location":{"lat":42.1596,"lon":-70.8217},"postal_code":"02061","region_iso_code":"MA","region_name":"Massachusetts","tz":"America/New_York","updated_at":null}],"AAAA":["2606:2800:220:1:248:1893:25c8:1946"],"CAA":null,"CNAME":null,"MX":[""],"NS":["a.iana-servers.net","b.iana-servers.net"],"SOA":{"email":"noc.dns.icann.org","expire":1209600,"min_ttl":3600,"ns":"ns.icann.org","refresh":7200,"retry":3600,"serial":2019121416},"TXT":["\"v=spf1
+        -all\" "]},"dns_records_updated_at":null,"extract":{"cookies":null,"description":"","emails":null,"external_redirect_uri":{"full_uri":"http://example.com","host":"example.com","path":""},"extracted_at":"2020-06-25T09:09:51.765623025Z","favicon_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","favicon_uri":{"full_uri":"http://example.com/favicon.ico","host":"example.com","path":"/favicon.ico"},"http_headers":[{"name":"Age","value":"588246"},{"name":"Cache-Control","value":"max-age=604800"},{"name":"Content-Type","value":"text/html;
+        charset=UTF-8"},{"name":"Date","value":"Thu, 25 Jun 2020 09:00:38 GMT"},{"name":"Etag","value":"\"3147526947+ident\""},{"name":"Expires","value":"Thu,
+        02 Jul 2020 09:00:38 GMT"},{"name":"Last-Modified","value":"Thu, 17 Oct 2019
+        07:18:26 GMT"},{"name":"Server","value":"ECS (dcb/7ECA)"},{"name":"Vary","value":"Accept-Encoding"},{"name":"X-Cache","value":"HIT"},{"name":"Content-Length","value":"1256"}],"http_status_code":200,"links":[{"anchor":"More
+        information...","attributes":{"nofollow":false,"uri":{"full_uri":"https://www.iana.org/domains/example","host":"www.iana.org","path":"/domains/example"}}}],"meta_tags":[{"name":"viewport","value":"width=device-width,
+        initial-scale=1"}],"robots_txt":"","scripts":null,"styles":null,"title":"Example
+        Domain","adsense_id":""},"is_CNAME":true,"is_MX":true,"is_NS":true,"is_PTR":true,"name":"example.com","name_without_tld":"example","updated_at":"2020-06-27T06:33:50.277451786Z","whois_parsed":{"admin":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrant":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrar":{"created_date":"1995-08-14T04:00:00Z","domain_dnssec":"signedDelegation","domain_id":"2336799_DOMAIN_COM-VRSN","domain_name":"EXAMPLE.COM","domain_status":"clientDeleteProhibited,clientTransferProhibited,clientUpdateProhibited","emails":"","expiration_date":"2020-08-13T04:00:00Z","name_servers":"A.IANA-SERVERS.NET,B.IANA-SERVERS.NET","referral_url":"","registrar_id":"376","registrar_name":"RESERVED-Internet
+        Assigned Numbers Authority","updated_date":"2019-08-14T07:04:41Z","whois_server":"whois.iana.org"},"tech":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""}},"whois_updated_at":null,"screenshot_url":"https://spycdn.com/screenshot/75/759e23d109a8c965cab8349c60c5d702.png","osh":63}],"total_count":1,"max_view_count":10000,"offset":0,"limit":1}}
+
+        '
+    http_version:
+  recorded_at: Sat, 15 Aug 2020 02:07:05 GMT
+recorded_with: VCR 5.1.0

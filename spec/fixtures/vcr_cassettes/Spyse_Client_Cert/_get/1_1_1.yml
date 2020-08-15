@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spyse.com/v3/data/cert?hash=7c552ab044c76d1df4f5ddf358807bfdcd07fa57
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spyse.com
+      Authorization:
+      - Bearer <CENSORED>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Aug 2020 01:43:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d49aafded3fff404dca068b361fc1159e1597455833; expires=Mon, 14-Sep-20
+        01:43:53 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - https://spyse.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '049162afda00000ab0bb806200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5c2f3a2c98ae0ab0-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"items":[],"total_count":0,"max_view_count":10000,"offset":0,"limit":1}}
+
+        '
+    http_version:
+  recorded_at: Sat, 15 Aug 2020 01:43:53 GMT
+recorded_with: VCR 5.1.0
