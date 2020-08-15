@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.spyse.com/v3/data/cert/search
+    body:
+      encoding: UTF-8
+      string: '{"search_params":[{"cert_issuer_country":{"operator":"eq","value":"USA"}}]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spyse.com
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <CENSORED>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Aug 2020 01:47:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d280b8fa8ca349fb2b53d6313d561b0091597456028; expires=Mon, 14-Sep-20
+        01:47:08 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - https://spyse.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '049165a9f90000f8c35797e200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5c2f3eeff84ff8c3-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"items":[{"parsed":{"extensions":{"authority_info_access":{"issuer_urls":null,"ocsp_urls":null},"authority_key_id":"933034497f616b933b9f3ba9a44f750c1aeb4633","basic_constraints":{"is_ca":false,"max_path_len":false},"certificate_policies":null,"crl_distribution_points":null,"extended_key_usage":{"any":false,"apple_ichat_encryption":false,"apple_ichat_signing":false,"apple_system_identity":false,"client_auth":true,"code_signing":false,"dvcs":false,"eap_over_lan":false,"eap_over_ppp":false,"email_protection":false,"ipsec_end_system":false,"ipsec_intermediate_system_usage":false,"ipsec_tunnel":false,"ipsec_user":false,"microsoft_ca_exchange":false,"microsoft_cert_trust_list_signing":false,"microsoft_document_signing":false,"microsoft_drm":false,"microsoft_efs_recovery":false,"microsoft_embedded_nt_crypto":false,"microsoft_encrypted_file_system":false,"microsoft_enrollment_agent":false,"microsoft_kernel_mode_code_signing":false,"microsoft_key_recovery_21":false,"microsoft_key_recovery_3":false,"microsoft_lifetime_signing":false,"microsoft_nt5_crypto":false,"microsoft_oem_whql_crypto":false,"microsoft_qualified_subordinate":false,"microsoft_root_list_signer":false,"microsoft_server_gated_crypto":false,"microsoft_smartcard_logon":false,"microsoft_system_health":false,"microsoft_timestamp_signing":false,"microsoft_whql_crypto":false,"sbgp_cert_aa_service_auth":false,"server_auth":true,"time_stamping":false},"issuer_alt_name":{"directory_names":null,"dns_names":null,"email_addresses":null,"ip_addresses":null,"other_names":null,"registered_ids":null,"uniform_resource_identifiers":null},"key_usage":{"certificate_sign":false,"content_commitment":false,"crl_sign":false,"data_encipherment":false,"decipher_only":false,"digital_signature":false,"encipher_only":false,"key_agreement":false,"key_encipherment":false,"value":0},"name_constraints":null,"signed_certificate_timestamps":null,"subject_alt_name":{"directory_names":null,"dns_names":["aws-cs01.jamasoftware.com"],"email_addresses":null,"ip_addresses":null,"other_names":null,"registered_ids":null,"uniform_resource_identifiers":null},"subject_key_id":"870a6dede074241de5c5fa2ff386e49ebee04921"},"fingerprint_md5":"c628b21070c48b7b13ec765f9aa1c7c2","fingerprint_sha1":"305cb52b75299740a6d1dabebbbcd61f8e03cdfe","fingerprint_sha256":"1e60df7b70046830be035021901bce9372b67165df6e3a7e2dba031093b2f5fc","issuer":{"common_name":null,"country":["USA"],"domain_component":null,"email_address":null,"given_name":null,"jurisdiction_country":null,"jurisdiction_locality":null,"jurisdiction_province":null,"locality":null,"organization":["Replicated-1f7e32ba"],"organizational_unit":["CA"],"postal_code":null,"province":null,"serial_number":null,"street_address":null,"surname":null},"issuer_dn":"C=USA,
+        O=Replicated-1f7e32ba, OU=CA","names":["10.2.16.118","172.17.0.1","aws-cs01.jamasoftware.com"],"san_count":3,"redacted":false,"serial_number":"45","signature":{"self_signed":false,"signature_algorithm":{"name":"SHA256-RSA","oid":"1.2.840.113549.1.1.11"},"valid":false,"value":"pdwF4r50y1LWyO0hfH6vZiMGXqytaclFQPJvChK91ZwP2NzNIRLRYRpCIuTFJqTZEu2yF4kQPPpxm73j5tnygXNmgSYBkHENmq2Um1WtdpIQbhm0g7HVVBkhpB7x5QlbcuuWPl/qinWIyMN8t7LrzDE00XgUR8dbDjh+sTak0e+Rqq55iMos5+oX0wM0VuBYRyKbSZehFSYDTTCm493sl9aFs3mr1fy23juzZFZXvvjRvg28+aONfWYfXywdYJkU4XyBxDw3kK81cp+IW+c0jyqOpMxK55A/fiuCoMsWk9CgXpJaw+dI8v9UGjzBSOKuoiQVkIw5Wtr0dlQCaqzpPg=="},"signature_algorithm":{"name":"SHA256-RSA","oid":"1.2.840.113549.1.1.11"},"spki_subject_fingerprint":"b38ea2e7c39751988f0bcfeff2ae1b6553750f29fafe19cd2694ac3037a09bad","subject":{"common_name":["aws-cs01.jamasoftware.com"],"country":["USA"],"domain_component":null,"email_address":null,"given_name":null,"jurisdiction_country":null,"jurisdiction_locality":null,"jurisdiction_province":null,"locality":null,"organization":["Replicated,
+        Inc."],"organizational_unit":["On-Prem Daemon"],"postal_code":null,"province":null,"serial_number":null,"street_address":null,"surname":null},"subject_dn":"C=USA,
+        O=Replicated, Inc., OU=On-Prem Daemon, CN=aws-cs01.jamasoftware.com","subject_key_info":{"ecdsa_public_key":{"b":"","curve":"","gx":"","gy":"","length":0,"n":"","p":"","pub":"","x":"","y":""},"fingerprint_sha256":"f5eaa06393cf327dac3ef589e79726a75162368ff573a86140d7da19068dce0f","key_algorithm":{"name":"RSA"},"rsa_public_key":{"exponent":0,"length":0,"modulus":""}},"tbs_fingerprint":"d2715247b95d37b5b8493334ea06bca5c0c09f3208ce10f49ddfb9a061fdc4aa","tbs_noct_fingerprint":"d2715247b95d37b5b8493334ea06bca5c0c09f3208ce10f49ddfb9a061fdc4aa","validation_level":"unknown","validity":{"status":"active","end":"2120-05-06T16:15:56Z","length":3155674184,"start":"2020-05-06T16:06:12Z"},"version":3},"raw":"MIIDsTCCApmgAwIBAgIBLTANBgkqhkiG9w0BAQsFADA5MQwwCgYDVQQGEwNVU0ExHDAaBgNVBAoTE1JlcGxpY2F0ZWQtMWY3ZTMyYmExCzAJBgNVBAsTAkNBMCAXDTIwMDUwNjE2MDYxMloYDzIxMjAwNTA2MTYxNTU2WjBmMQwwCgYDVQQGEwNVU0ExGTAXBgNVBAoTEFJlcGxpY2F0ZWQsIEluYy4xFzAVBgNVBAsTDk9uLVByZW0gRGFlbW9uMSIwIAYDVQQDExlhd3MtY3MwMS5qYW1hc29mdHdhcmUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy3jxiWl7NWkch/zR7mO6VENiDaW/bJ9yBkOpVQPpUjnrd5KvN13fLW7I5wD9wYEaOKmyQKel5TRes4Ywf8/aGS90PMjUo2cYm4vl/X4kxlMdUEcImuXEwspObqq6aijtuJNaZH7ivvdDea6Q0HrKzR2ei4Pv1s2ThqsW1gX90LBE5UGW3tUsZQYsj84XkiHFzalm0caV6jYQQWTDuvIUHasD2Pmy+E1R9nepE5uu7wfug/14RdRomxTpYX6as06ghONt/9TN00zk1kQe8R6/NYx5IOHFPdOJOaMSVCHlqdcEMmqKgWzWVY39IYVi8Enk/NFm+onRhlGYf9BvEbCaZQIDAQABo4GUMIGRMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQUhwpt7eB0JB3lxfov84bknr7gSSEwHwYDVR0jBBgwFoAUkzA0SX9ha5M7nzuppE91DBrrRjMwMAYDVR0RBCkwJ4IZYXdzLWNzMDEuamFtYXNvZnR3YXJlLmNvbYcECgIQdocErBEAATANBgkqhkiG9w0BAQsFAAOCAQEApdwF4r50y1LWyO0hfH6vZiMGXqytaclFQPJvChK91ZwP2NzNIRLRYRpCIuTFJqTZEu2yF4kQPPpxm73j5tnygXNmgSYBkHENmq2Um1WtdpIQbhm0g7HVVBkhpB7x5QlbcuuWPl/qinWIyMN8t7LrzDE00XgUR8dbDjh+sTak0e+Rqq55iMos5+oX0wM0VuBYRyKbSZehFSYDTTCm493sl9aFs3mr1fy23juzZFZXvvjRvg28+aONfWYfXywdYJkU4XyBxDw3kK81cp+IW+c0jyqOpMxK55A/fiuCoMsWk9CgXpJaw+dI8v9UGjzBSOKuoiQVkIw5Wtr0dlQCaqzpPg==","fingerprint_sha256":"1e60df7b70046830be035021901bce9372b67165df6e3a7e2dba031093b2f5fc","updated_at":"2020-06-11T15:15:25.358089366Z"}],"total_count":653,"max_view_count":10000,"offset":0,"limit":1}}
+
+        '
+    http_version:
+  recorded_at: Sat, 15 Aug 2020 01:47:08 GMT
+recorded_with: VCR 5.1.0
