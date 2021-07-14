@@ -1,12 +1,14 @@
 # spysex
 
-[![Build Status](https://travis-ci.com/ninoseki/spysex.svg?branch=master)](https://travis-ci.com/ninoseki/spysex)
+[![Ruby](https://github.com/ninoseki/spysex/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/spysex/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/spysex/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/spysex?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/spysex/badge)](https://www.codefactor.io/repository/github/ninoseki/spysex)
 
 A dead simple [Spyse](https://spyse.com) API wrapper for Ruby.
 
-Note: this wrapper does not support all the API endpoints.
+- Notes:
+  - API v4 is supported.
+  - This wrapper does not support all the API endpoints.
 
 ## Installation
 
@@ -19,7 +21,7 @@ gem install spysex
 ```ruby
 require "spysex"
 
-# when given nothing, it tries to load your usernamem & API key via ENV["SPYSE_API_KEY"]
+# when given nothing, it tries to load your API key via ENV["SPYSE_API_KEY"]
 api = Spyse::API.new
 # or you can set them manually
 api = Spyse::API.new("foo bar")
