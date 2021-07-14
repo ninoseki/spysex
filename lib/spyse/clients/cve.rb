@@ -8,27 +8,12 @@ module Spyse
       #
       # @see https://spyse.com/api#/cve/cve
       #
-      # @return [Hash]
-      #
-      def get(cve_id, limit: nil, offset: nil)
-        params = {
-          cve_id: cve_id, limit: limit, offset: offset,
-        }.compact
-        _get("/cve", params) { |json| json }
-      end
-
-      #
-      # Lists IPs, that vulnerable by provided CVE
-      #
-      # @see https://spyse.com/api#/cve/vulnerable_ip_by_cve
+      # @param [String] cve_id MITRE CVE unique identifier.
       #
       # @return [Hash]
       #
-      def vulnerable_ip(cve, limit: nil, offset: nil)
-        params = {
-          cve: cve, limit: limit, offset: offset,
-        }.compact
-        _get("/cve/vulnerable-ip", params) { |json| json }
+      def get(cve_id)
+        _get("/cve/#{cve_id}") { |json| json }
       end
 
       #

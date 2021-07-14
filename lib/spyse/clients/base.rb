@@ -8,11 +8,27 @@ module Spyse
   module Client
     class Base
       HOST = "api.spyse.com"
-      VERSION = "v3"
+      VERSION = "v4"
       BASE_URL = "https://#{HOST}/#{VERSION}/data"
 
       def initialize(api_key)
         @api_key = api_key
+      end
+
+      def _get(path, params = {}, &block)
+        uri = url_for(path)
+        uri.query = URI.encode_www_form(params)
+        get = Net::HTTP::Get.new(uri)
+
+        request(get, &block)
+      end
+
+      def _post(path, params = {}, &block)
+        post = Net::HTTP::Post.new(url_for(path))
+        post.body = JSON.generate(params)
+        post["Content-Type"] = "application/json"
+
+        request(post, &block)
       end
 
       private
@@ -53,22 +69,6 @@ module Spyse
             raise Error, "Unsupported response code returned: #{code} - #{error}"
           end
         end
-      end
-
-      def _get(path, params = {}, &block)
-        uri = url_for(path)
-        uri.query = URI.encode_www_form(params)
-        get = Net::HTTP::Get.new(uri)
-
-        request(get, &block)
-      end
-
-      def _post(path, params = {}, &block)
-        post = Net::HTTP::Post.new(url_for(path))
-        post.body = JSON.generate(params)
-        post["Content-Type"] = "application/json"
-
-        request(post, &block)
       end
     end
   end

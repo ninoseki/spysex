@@ -26,5 +26,19 @@ module Spyse
     def ip
       @ip ||= Client::IP.new(@api_key)
     end
+
+    def get(path, params = {})
+      base._get(path, params) { |json| json }
+    end
+
+    def post(path, params = {})
+      base._post(path, params) { |json| json }
+    end
+
+    private
+
+    def base
+      @base ||= Client::Base.new(@api_key)
+    end
   end
 end

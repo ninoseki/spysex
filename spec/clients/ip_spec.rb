@@ -12,15 +12,9 @@ RSpec.describe Spyse::Client::IP, :vcr do
     let(:search_params) {
       [
         {
-          "ip_ip": {
+          "geo_country": {
             "operator": "eq",
-            "value": "8.8.8.8"
-          }
-        },
-        {
-          "ip_domain": {
-            "operator": "eq",
-            "value": "i.ua"
+            "value": "USA"
           }
         }
       ]

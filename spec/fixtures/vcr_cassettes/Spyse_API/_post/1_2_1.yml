@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.spyse.com/v4/data/ip/search
+    uri: https://api.spyse.com/v4/data/email/search
     body:
       encoding: UTF-8
-      string: '{"search_params":[{"geo_country":{"operator":"eq","value":"USA"}}]}'
+      string: '{"search_params":[{"email":{"operator":"eq","value":"bill@gmail.com"}}]}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -25,17 +25,19 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 14 Jul 2021 12:45:04 GMT
+      - Wed, 14 Jul 2021 12:53:44 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Vary:
+      - Accept-Encoding
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Request-Id:
-      - 519a1372-27ce-410b-8327-62c29f359c38
+      - 557015d6-70e5-4942-8bca-dcff724b3827
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -43,12 +45,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 66ead88e684d22ed-NRT
+      - 66eae53f8ea13445-NRT
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"total_items":0,"offset":0,"limit":25,"items":[]}}
+      string: '{"data":{"total_items":1,"offset":0,"limit":25,"items":[{"email":"bill@gmail.com","sources":[{"target":"hanspaulp.com","type":"site","last_seen":"2020-09-30T14:15:04.897787276Z"},{"target":"3.15.12.109","type":"port","last_seen":"2021-06-03T10:52:16.186340999Z"}],"updated_at":"2020-11-09T09:10:25.614137497Z"}]}}
 
         '
     http_version:
-  recorded_at: Wed, 14 Jul 2021 12:45:02 GMT
+  recorded_at: Wed, 14 Jul 2021 12:53:42 GMT
 recorded_with: VCR 5.1.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.spyse.com/v3/data/domain?name=example.com
+    uri: https://api.spyse.com/v4/data/domain/example.com
     body:
       encoding: US-ASCII
       string: ''
@@ -23,59 +23,48 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 15 Aug 2020 02:07:06 GMT
+      - Wed, 14 Jul 2021 12:41:40 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d2fecad3c6389f9682a421b3b491c6cf71597457225; expires=Mon, 14-Sep-20
-        02:07:05 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
       Vary:
-      - Accept-Encoding
       - Accept-Encoding
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Access-Control-Allow-Origin:
-      - https://spyse.com
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Methods:
-      - GET, PUT, POST, DELETE, PATCH, OPTIONS
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      X-Request-Id:
+      - c7a98587-c8cc-4e64-ba88-6a8066311c87
       Cf-Cache-Status:
       - DYNAMIC
-      Cf-Request-Id:
-      - '049177edbc0000d64900b11200000001'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 5c2f5c292bc3d649-NRT
+      - 66ead3978e4e0afc-NRT
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"items":[{"alexa_info":{"rank":10567},"alexa_rank_updated_at":null,"cert_summary":{"fingerprint_sha256":"9250711c54de546f4370e0c3d3a3ec45bc96092a25a4a71a1afa396af7047eb8","issuer_dn":{"C":"US","CN":"DigiCert
-        SHA2 Secure Server CA","L":"","O":"DigiCert Inc","OU":"","ST":"","emailAddress":"","raw":"C=US,
-        O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA"},"subject_dn":{"C":"US","CN":"www.example.org","L":"Los
-        Angeles","O":"Internet Corporation for Assigned Names and Numbers","OU":"Technology","ST":"California","businessCategory":"","emailAddress":"","jurisdictionCountry":"","jurisdictionStateOrProvince":"","postalCode":"","raw":"C=US,
+      string: '{"data":{"items":[{"name":"example.com","alexa":{"rank":11341,"updated_at":null},"cert_summary":{"fingerprint_sha256":"200dcafa767c8450ece644879c062a0cdf52240fe05bb7eb284611c3aef3ec2e","issuer":{"country":"US","common_name":"DigiCert
+        TLS RSA SHA256 2020 CA1","locality":"","organization":"DigiCert Inc","organizational_unit":"","province":"","emailAddress":""},"issuer_dn":"C=US,
+        O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1","subject":{"country":"US","common_name":"www.example.org","locality":"Los
+        Angeles","organization":"Internet Corporation for Assigned Names and Numbers","organizational_unit":"Technology","province":"California","businessCategory":"","emailAddress":"","jurisdictionCountry":"","jurisdictionStateOrProvince":"","postalCode":"","serialNumber":"","street":""},"subject_dn":"C=US,
         ST=California, L=Los Angeles, O=Internet Corporation for Assigned Names and
-        Numbers, OU=Technology, CN=www.example.org","serialNumber":"","street":""},"tls_version":"TLSv1.2","validity_end":"2020-12-02T12:00:00Z"},"cert_summary_updated_at":null,"dns_records":{"A":[{"ip":"93.184.216.34","as_num":15133,"as_org":"EDGECAST","isp":"Verizon
-        Business","org":"Verizon Business","city_name":"Norwell","country":"United
-        States","country_iso_code":"US","location":{"lat":42.1596,"lon":-70.8217},"postal_code":"02061","region_iso_code":"MA","region_name":"Massachusetts","tz":"America/New_York","updated_at":null}],"AAAA":["2606:2800:220:1:248:1893:25c8:1946"],"CAA":null,"CNAME":null,"MX":[""],"NS":["a.iana-servers.net","b.iana-servers.net"],"SOA":{"email":"noc.dns.icann.org","expire":1209600,"min_ttl":3600,"ns":"ns.icann.org","refresh":7200,"retry":3600,"serial":2019121416},"TXT":["\"v=spf1
-        -all\" "]},"dns_records_updated_at":null,"extract":{"cookies":null,"description":"","emails":null,"external_redirect_uri":{"full_uri":"http://example.com","host":"example.com","path":""},"extracted_at":"2020-06-25T09:09:51.765623025Z","favicon_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","favicon_uri":{"full_uri":"http://example.com/favicon.ico","host":"example.com","path":"/favicon.ico"},"http_headers":[{"name":"Age","value":"588246"},{"name":"Cache-Control","value":"max-age=604800"},{"name":"Content-Type","value":"text/html;
-        charset=UTF-8"},{"name":"Date","value":"Thu, 25 Jun 2020 09:00:38 GMT"},{"name":"Etag","value":"\"3147526947+ident\""},{"name":"Expires","value":"Thu,
-        02 Jul 2020 09:00:38 GMT"},{"name":"Last-Modified","value":"Thu, 17 Oct 2019
-        07:18:26 GMT"},{"name":"Server","value":"ECS (dcb/7ECA)"},{"name":"Vary","value":"Accept-Encoding"},{"name":"X-Cache","value":"HIT"},{"name":"Content-Length","value":"1256"}],"http_status_code":200,"links":[{"anchor":"More
-        information...","attributes":{"nofollow":false,"uri":{"full_uri":"https://www.iana.org/domains/example","host":"www.iana.org","path":"/domains/example"}}}],"meta_tags":[{"name":"viewport","value":"width=device-width,
+        Numbers, CN=www.example.org","tls_version":"TLSv1.2","validity_end":"2021-12-25T23:59:59Z","updated_at":null},"dns_records":{"A":["93.184.216.34"],"AAAA":["2606:2800:220:1:248:1893:25c8:1946"],"CAA":null,"CNAME":null,"MX":[""],"NS":["a.iana-servers.net","b.iana-servers.net"],"SOA":{"email":"noc.dns.icann.org","expire":1209600,"min_ttl":3600,"ns":"ns.icann.org","refresh":7200,"retry":3600,"serial":2021022308},"TXT":["8j5nfqld20zpcyr8xjw0ydcfq9rk8hgm","v=spf1
+        -all"],"SPF":[{"mechanisms":[{"name":"all","qualifier":"-","value":""}],"modifiers":null,"raw":"v=spf1
+        -all","validation_errors":null,"version":"spf1"}],"updated_at":"2021-05-15T16:20:03.557300341Z"},"hosts_enrichment":[{"ip":"93.184.216.34","as_num":15133,"as_org":"edgecast","isp":"verizon
+        business","city_name":"norwell","country":"united states","country_iso_code":"us","location":{"lat":42.1596,"lon":-70.8217}}],"http_extract":{"cookies":null,"description":"","emails":null,"final_redirect_url":{"full_uri":"93.184.216.34","host":"","path":"93.184.216.34"},"extracted_at":"2020-12-24T15:39:17.931478761Z","favicon_sha256":"","http_headers":[{"name":"Accept-Ranges","value":"bytes"},{"name":"Age","value":"353246"},{"name":"Cache-Control","value":"max-age=604800"},{"name":"Content-Type","value":"text/html;
+        charset=UTF-8"},{"name":"Date","value":"Wed, 23 Dec 2020 15:52:12 GMT"},{"name":"Etag","value":"\"3147526947\""},{"name":"Expires","value":"Wed,
+        30 Dec 2020 15:52:12 GMT"},{"name":"Last-Modified","value":"Thu, 17 Oct 2019
+        07:18:26 GMT"},{"name":"Server","value":"ECS (dcb/7EEB)"},{"name":"Vary","value":"Accept-Encoding"},{"name":"X-Cache","value":"HIT"},{"name":"Content-Length","value":"1256"}],"http_status_code":200,"links":[{"anchor":"More
+        information...","url":"https://www.iana.org/domains/example","url_host":"www.iana.org"}],"meta_tags":[{"name":"viewport","value":"width=device-width,
         initial-scale=1"}],"robots_txt":"","scripts":null,"styles":null,"title":"Example
-        Domain","adsense_id":""},"is_CNAME":true,"is_MX":true,"is_NS":true,"is_PTR":true,"name":"example.com","name_without_tld":"example","updated_at":"2020-06-27T06:33:50.277451786Z","whois_parsed":{"admin":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrant":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrar":{"created_date":"1995-08-14T04:00:00Z","domain_dnssec":"signedDelegation","domain_id":"2336799_DOMAIN_COM-VRSN","domain_name":"EXAMPLE.COM","domain_status":"clientDeleteProhibited,clientTransferProhibited,clientUpdateProhibited","emails":"","expiration_date":"2020-08-13T04:00:00Z","name_servers":"A.IANA-SERVERS.NET,B.IANA-SERVERS.NET","referral_url":"","registrar_id":"376","registrar_name":"RESERVED-Internet
-        Assigned Numbers Authority","updated_date":"2019-08-14T07:04:41Z","whois_server":"whois.iana.org"},"tech":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""}},"whois_updated_at":null,"screenshot_url":"https://spycdn.com/screenshot/75/759e23d109a8c965cab8349c60c5d702.png","osh":63}],"total_count":1,"max_view_count":10000,"offset":0,"limit":1}}
+        Domain"},"is_CNAME":true,"is_MX":true,"is_NS":true,"is_PTR":true,"is_subdomain":null,"name_without_suffix":"example","updated_at":"2021-05-18T14:50:22.52713816Z","whois_parsed":{"admin":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrant":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"registrar":{"created_date":"1995-08-14T04:00:00Z","domain_dnssec":"signedDelegation","domain_id":"2336799_DOMAIN_COM-VRSN","domain_name":"EXAMPLE.COM","domain_status":"clientDeleteProhibited,clientTransferProhibited,clientUpdateProhibited","emails":"","expiration_date":"2021-08-13T04:00:00Z","name_servers":"A.IANA-SERVERS.NET,B.IANA-SERVERS.NET","referral_url":"","registrar_id":"376","registrar_name":"RESERVED-Internet
+        Assigned Numbers Authority","updated_date":"2020-08-14T07:02:37Z","whois_server":"whois.iana.org"},"tech":{"city":"","country":"","email":"","fax":"","fax_ext":"","id":"","name":"","organization":"","phone":"","phone_ext":"","postal_code":"","province":"","street":"","street_ext":""},"updated_at":null},"security_score":{"score":100},"cve_list":null,"technologies":[{"name":"Amazon
+        ECS","version":""},{"name":"Azure CDN","version":""},{"name":"Amazon Web Services","version":""},{"name":"Docker","version":""}],"trackers":{"adsense_id":"","apple_itunes_app":"","google_play_app":"","google_analytics_key":"","google_site_verification":""},"organizations":null}]}}
 
         '
     http_version:
-  recorded_at: Sat, 15 Aug 2020 02:07:05 GMT
+  recorded_at: Wed, 14 Jul 2021 12:41:38 GMT
 recorded_with: VCR 5.1.0
