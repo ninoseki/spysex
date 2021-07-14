@@ -4,22 +4,16 @@ module Spyse
   module Client
     class IP < Base
       #
-      # Lists ips
+      # Returns the current data about the given IP address.
       #
       # @see https://spyse.com/api#/ip/ip
       #
+      # @param [String] ip A valid IPv4 address.
+      #
       # @return [Hash]
       #
-      def get(ip, limit: nil, offset: nil, as_org: nil, country: nil, as_num: nil)
-        params = {
-          limit: limit,
-          offset: offset,
-          ip: ip,
-          as_org: as_org,
-          country: country,
-          as_num: as_num
-        }.compact
-        _get("/ip", params) { |json| json }
+      def get(ip)
+        _get("/ip/#{ip}") { |json| json }
       end
 
       #

@@ -12,9 +12,9 @@ RSpec.describe Spyse::Client::AS, :vcr do
     let(:search_params) {
       [
         {
-          "as_ip": {
-            "operator": "eq",
-            "value": "8.8.8.8"
+          ip: {
+            operator: "eq",
+            value: "8.8.8.8"
           }
         },
       ]

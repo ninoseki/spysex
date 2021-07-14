@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.spyse.com/v3/data/cert?hash=7c552ab044c76d1df4f5ddf358807bfdcd07fa57
+    uri: https://api.spyse.com/v4/data/certificate/de0f6029218777b6cc16cafeb7d8ecf321bede62b0ec6ab2b4b1690460ff2158
     body:
       encoding: US-ASCII
       string: ''
@@ -23,41 +23,33 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 15 Aug 2020 01:43:54 GMT
+      - Wed, 14 Jul 2021 12:40:14 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d49aafded3fff404dca068b361fc1159e1597455833; expires=Mon, 14-Sep-20
-        01:43:53 GMT; path=/; domain=.spyse.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Access-Control-Allow-Origin:
-      - https://spyse.com
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Methods:
-      - GET, PUT, POST, DELETE, PATCH, OPTIONS
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      X-Request-Id:
+      - 2529f139-5e9a-4c31-8244-5bf23151a550
       Cf-Cache-Status:
       - DYNAMIC
-      Cf-Request-Id:
-      - '049162afda00000ab0bb806200000001'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 5c2f3a2c98ae0ab0-NRT
+      - 66ead17d0a771f33-NRT
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"items":[],"total_count":0,"max_view_count":10000,"offset":0,"limit":1}}
+      string: '{"data":{"items":[{"fingerprint_sha256":"de0f6029218777b6cc16cafeb7d8ecf321bede62b0ec6ab2b4b1690460ff2158","parsed":{"extensions":{"authority_info_access":{"issuer_urls":null,"ocsp_urls":null},"authority_key_id":"","basic_constraints":{"is_ca":null,"max_path_len":null},"certificate_policies":null,"crl_distribution_points":null,"extended_key_usage":{"any":null,"apple_ichat_encryption":null,"apple_ichat_signing":null,"apple_system_identity":null,"client_auth":null,"code_signing":null,"dvcs":null,"eap_over_lan":null,"eap_over_ppp":null,"email_protection":null,"ipsec_end_system":null,"ipsec_intermediate_system_usage":null,"ipsec_tunnel":null,"ipsec_user":null,"microsoft_ca_exchange":null,"microsoft_cert_trust_list_signing":null,"microsoft_document_signing":null,"microsoft_drm":null,"microsoft_efs_recovery":null,"microsoft_embedded_nt_crypto":null,"microsoft_encrypted_file_system":null,"microsoft_enrollment_agent":null,"microsoft_kernel_mode_code_signing":null,"microsoft_key_recovery_21":null,"microsoft_key_recovery_3":null,"microsoft_lifetime_signing":null,"microsoft_nt5_crypto":null,"microsoft_oem_whql_crypto":null,"microsoft_qualified_subordinate":null,"microsoft_root_list_signer":null,"microsoft_server_gated_crypto":null,"microsoft_smartcard_logon":null,"microsoft_system_health":null,"microsoft_timestamp_signing":null,"microsoft_whql_crypto":null,"sbgp_cert_aa_service_auth":null,"server_auth":null,"time_stamping":null},"issuer_alt_name":{"directory_names":null,"dns_names":null,"email_addresses":null,"ip_addresses":null,"other_names":null,"registered_ids":null,"uniform_resource_identifiers":null},"key_usage":{"certificate_sign":null,"content_commitment":null,"crl_sign":null,"data_encipherment":null,"decipher_only":null,"digital_signature":null,"encipher_only":null,"key_agreement":null,"key_encipherment":null,"value":0},"name_constraints":null,"signed_certificate_timestamps":null,"subject_alt_name":{"directory_names":null,"dns_names":[],"email_addresses":null,"ip_addresses":null,"other_names":null,"registered_ids":null,"uniform_resource_identifiers":null},"subject_key_id":""},"fingerprint_md5":"6a1349ecc748b8879ad1e77377af1768","fingerprint_sha1":"edd958c269d2c43a42d34f8233fd9f29aaebff67","fingerprint_sha256":"de0f6029218777b6cc16cafeb7d8ecf321bede62b0ec6ab2b4b1690460ff2158","issuer":{"common_name":["example.com"],"country":null,"domain_component":null,"email_address":null,"given_name":null,"jurisdiction_country":null,"jurisdiction_locality":null,"jurisdiction_province":null,"locality":null,"organization":null,"organizational_unit":null,"postal_code":null,"province":null,"serial_number":null,"street_address":null,"surname":null},"issuer_dn":"CN=example.com","names":["example.com"],"redacted":null,"serial_number":"12966212954107336882","signature":{"self_signed":true,"signature_algorithm":{"name":"SHA1-RSA","oid":"1.2.840.113549.1.1.5"},"valid":true,"value":"W8jKhUQ7F/M19RFuagPAEPCW9l6lq1XkjvG5TFd1moCdmoqzJt/nP/NhQsLHf3GdPFF4QPyqLtIIvxderVduj4olHaefdEGqN3fB9qsXNa881C4pmT4MR+IgOL0cjB7cmTeoeOxXZ+zvcTTD7vLIjs/K687BHRF+VEWzjJAywmbG0yFFlb9l5qq0dCtdHeVbi1ni4q/uBunOo6WtuOFpqk/QpanHiddhtVp5ns8u8m4ltJeTNoriChRIkT+R49CdeaNSNqVwGysrAHVkR7CUkDrXIDvFYfZNMKN7SoOBw6dYW6xM6Bszr/dlY4N5RvF/oc2zCTEFEaLR5A+BpOe8Cw=="},"signature_algorithm":{"name":"SHA1-RSA","oid":"1.2.840.113549.1.1.5"},"spki_subject_fingerprint":"c1eb2812eeae971d65faebad1c825a87de1a6b02e93e1a7db489579174d44040","subject":{"common_name":["example.com"],"country":null,"domain_component":null,"email_address":null,"given_name":null,"jurisdiction_country":null,"jurisdiction_locality":null,"jurisdiction_province":null,"locality":null,"organization":null,"organizational_unit":null,"postal_code":null,"province":null,"serial_number":null,"street_address":null,"surname":null},"subject_dn":"CN=example.com","subject_key_info":{"ecdsa_public_key":{"b":"","curve":"","gx":"","gy":"","length":0,"n":"","p":"","pub":"","x":"","y":""},"fingerprint_sha256":"2bf95e73d665fbdcf525f08420573df075ea81759e46b7554a2afa1b68d3bebe","key_algorithm":{"name":"RSA"},"rsa_public_key":{"exponent":0,"length":0,"modulus":""}},"tbs_fingerprint":"cba29bf0ddefb22340d36cf3a059176ffa493e86aa95951845539d97914d9bb4","tbs_noct_fingerprint":"7a55b4b14f759a72a1838a8219f1f021db66b8293518dc8d777dae2e422785f0","validation_level":"unknown","validity":{"status":"","end":"2022-11-12T11:18:27Z","length":315360000,"start":"2012-11-14T11:18:27Z"},"version":1},"raw":"MIICqDCCAZACCQCz8T3726LYsjANBgkqhkiG9w0BAQUFADAWMRQwEgYDVQQDDAtleGFtcGxlLmNvbTAeFw0xMjExMTQxMTE4MjdaFw0yMjExMTIxMTE4MjdaMBYxFDASBgNVBAMMC2V4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5NHl5TfZtO6zugau2tp5mWIcQYJhuwKTmYeXDLYAGJpoD2SixwPL5c8glneIRz1N2EQIZVeaWGbS0FLFlPdOkCkplpW9isYVC4XqKrk5b4HW4+YC+Cup0k+Kd4NMeZOTUvWr5N6dIpdibkVumBc/pao8VtdwywlCL/PwGRsQtkXrRICzdtRa3MXqTmEFfoyVCGgBRtronlB9x4Plfb8Psk4GrPkjrWYgO8peKrl0O5+F+sYg7Gj95zCH73BQANzCVNrgD9fs9cyx3ru9CUdEoIxAAJwQFkjm7xr6xqhIlSgnQ7B0uOSTNRcXY6rws+PxGneec/kRPRgzjC/QHY6n8QIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQBbyMqFRDsX8zX1EW5qA8AQ8Jb2XqWrVeSO8blMV3WagJ2airMm3+c/82FCwsd/cZ08UXhA/Kou0gi/F16tV26PiiUdp590Qao3d8H2qxc1rzzULimZPgxH4iA4vRyMHtyZN6h47Fdn7O9xNMPu8siOz8rrzsEdEX5URbOMkDLCZsbTIUWVv2XmqrR0K10d5VuLWeLir+4G6c6jpa244WmqT9ClqceJ12G1Wnmezy7ybiW0l5M2iuIKFEiRP5Hj0J15o1I2pXAbKysAdWRHsJSQOtcgO8Vh9k0wo3tKg4HDp1hbrEzoGzOv92Vjg3lG8X+hzbMJMQURotHkD4Gk57wL","validation":{"reason":"wrong
+        host","is_valid":false},"updated_at":"2021-06-08T09:30:07.575620612Z"}]}}
 
         '
     http_version:
-  recorded_at: Sat, 15 Aug 2020 01:43:53 GMT
+  recorded_at: Wed, 14 Jul 2021 12:40:12 GMT
 recorded_with: VCR 5.1.0

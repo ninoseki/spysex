@@ -3,7 +3,7 @@ RSpec.describe Spyse::Client::Cert, :vcr do
 
   describe "#get" do
     it do
-      res = api.cert.get("7c552ab044c76d1df4f5ddf358807bfdcd07fa57")
+      res = api.cert.get("de0f6029218777b6cc16cafeb7d8ecf321bede62b0ec6ab2b4b1690460ff2158")
       expect(res).to be_a(Hash)
     end
   end
@@ -12,9 +12,9 @@ RSpec.describe Spyse::Client::Cert, :vcr do
     let(:search_params) {
       [
         {
-          "cert_issuer_country": {
-            "operator": "eq",
-            "value": "USA"
+          issuer_country: {
+            operator: "eq",
+            value: "USA"
           }
         },
       ]

@@ -4,21 +4,18 @@ module Spyse
   module Client
     class Cert < Base
       #
-      # Lists Certificate
+      # Returns the current data about the given certificate.
       #
-      # @see https://spyse.com/api#/certificate/certificate
+      # @param [String] hash The SHA256 fingerprint of the certificate.
       #
       # @return [Hash]
       #
-      def get(hash, limit: nil, offset: nil)
-        params = {
-          hash: hash, limit: limit, offset: offset,
-        }.compact
-        _get("/cert", params) { |json| json }
+      def get(hash)
+        _get("/certificate/#{hash}") { |json| json }
       end
 
       #
-      # Lists certificates
+      # Returns a list of certificates that matched the search query.
       #
       # @see https://spyse.com/api#/certificate/cert_search
       #
@@ -28,7 +25,7 @@ module Spyse
         params = {
           search_params: search_params, limit: limit, offset: offset,
         }.compact
-        _post("/cert/search", params) { |json| json }
+        _post("/certificate/search", params) { |json| json }
       end
     end
   end

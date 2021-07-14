@@ -10,11 +10,8 @@ module Spyse
       #
       # @return [Hash]
       #
-      def get(asn, limit: nil, offset: nil)
-        params = {
-          asn: asn, limit: limit, offset: offset,
-        }.compact
-        _get("/as", params) { |json| json }
+      def get(asn)
+        _get("/as/#{asn}") { |json| json }
       end
 
       #
